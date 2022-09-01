@@ -2,3 +2,26 @@ intro: If you’re looking for any Plumbing & Heating work in and around Dorset
   then please do not hesitate to contact us. We pride ourselves on our great
   level of service and high standard of workmanship. It may cost less than you
   expect, so what are you waiting for?
+info_points:
+  - title: Quality
+    description: The materials we use are of the highest quality as we hand pick
+      them using only the most reputable suppliers in and around Dorset. These
+      small touches mean a far superior finish that can stand the test of time.
+    image: /static/img/blue_tick.svg
+  - title: Professional
+    description: We strive to be a company that you can rely on. Thats why we arrive
+      at the agreed time all the time and well equipped for the job at hand.
+      Doing so means we can always stick to time lines and the initial
+      quotations we give.
+    image: /static/img/brief_case.svg
+  - title: Experienced
+    description: We are time served and have many years experience working within
+      the trade. Throughout our many years operating in Dorset we have built up
+      a wealth of experience along with a solid base of satisfied customers.
+    image: /static/img/sparkles.svg
+  - title: Trustworthy
+    description: A large percentage of our customers recommend us to their friends
+      and family due to our excellent levels of customer service and quality of
+      our workmanship. Many even return to us for other Plumbing & Heating work
+      in the future.
+    image: /static/img/thumbs_up.svg
