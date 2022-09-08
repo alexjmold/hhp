@@ -1,0 +1,14 @@
+---
+layout: default
+title: Heritage Heating and Plumbing
+path: /services
+name: services
+---
+
+<div
+  class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
+>
+  {% for someId, item in page.data %}
+  <pre>{{item}} hello</pre>
+  {% endfor %} {% include "./_includes/partials/content.html" %}
+</div>

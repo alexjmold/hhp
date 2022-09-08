@@ -1,0 +1,15 @@
+{% if home.info_points %}
+<div class="w-full bg-gray-800 px-3 py-6 text-white">
+  <div class="container max-w-7xl lg:flex flex-wrap">
+    {% for point in home.info_points %}
+    <div class="lg:w-1/2 my-12 lg:pr-16">
+      <div class="flex items-center justify-start mb-3">
+        <img src="{{ point.image }}" class="mr-3" />
+        <p class="text-xl font-bold">{{ point.title }}</p>
+      </div>
+      <p>{{ point.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

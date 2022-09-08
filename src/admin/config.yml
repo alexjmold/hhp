@@ -5,39 +5,58 @@ backend:
   ### enable below lines for github integration ###
   # name: github
   # repo: surjithctly/neat-starter
-media_folder: "src/static/img"
-public_folder: "/static/img"
+media_folder: 'src/static/img'
+public_folder: '/static/img'
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-  - label: "Settings"
-    name: "settings"
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Home Page'
+        name: 'home'
+        file: src/_data/home.yaml
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Tagline, name: tagline, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - { label: Featured Image, name: featured_image, widget: image }
+          - label: Information Points
+            name: info_points
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: markdown }
+
+        # - label: 'Services Page'
+        #   name: 'services'
+        #   file: 'src/_data/services.yml'
+        #   slug: '/services'
+        #   fields:
+        #     - { label: Title, name: title, widget: string }
+        #     - { label: Intro, name: intro, widget: markdown }
+        #     - label: Plumbing Services
+        #       name: plumbing_services
+        #       widget: list
+        #       fields:
+        #         - { label: Text, name: text, widget: string }
+        #     - label: Heating Services
+        #       name: heating_services
+        #       widget: list
+        #       fields:
+        #         - { label: Text, name: text, widget: string }
+
+  - label: 'Settings'
+    name: 'settings'
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
+      - label: 'Navigation'
+        name: 'items'
+        file: 'src/_data/navigation.yaml'
         fields:
           - label: Nav Items
             name: items
@@ -47,22 +66,41 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
-        fields:
-          - label: Nav Items
-            name: links
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
-      - label: "Meta Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
-        fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+      # - label: 'Quick Links'
+      #   name: 'links'
+      #   file: 'src/_data/quicklinks.yaml'
+      #   fields:
+      #     - label: Nav Items
+      #       name: links
+      #       widget: list
+      #       collapsed: false
+      #       fields:
+      #         - { label: Title, name: title, widget: string }
+      #         - { label: URL, name: url, widget: string }
+      #         - { label: Description, name: desc, widget: string }
+      # - label: 'Meta Settings'
+      #   name: 'settings'
+      #   file: 'src/_data/settings.yaml'
+      #   fields:
+      #     - { label: Name, name: name, widget: string }
+      #     - { label: Author, name: author, widget: string }
+      #     - { label: URL, name: url, widget: string }
+
+  - label: 'Blog'
+    name: 'blog'
+    folder: 'src/posts'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - widget: select
+        label: 'tags'
+        name: 'tags'
+        multiple: true
+        create: true
+        options: ['Tags', 'created', 'from', 'config.yml']

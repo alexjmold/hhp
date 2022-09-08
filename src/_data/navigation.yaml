@@ -2,8 +2,8 @@ items:
   - text: Home
     url: /
   - text: Gallery
-    url: /gallery
+    url: /gallery/
   - text: Reviews
-    url: /reviews
+    url: /reviews/
   - text: Contact
-    url: /contact
+    url: /contact/
