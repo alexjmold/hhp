@@ -21,7 +21,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Tagline, name: tagline, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
+          - { label: Intro, name: intro, widget: text }
           - { label: Featured Image, name: featured_image, widget: image }
           - label: Information Points
             name: info_points
@@ -29,7 +29,32 @@ collections:
             fields:
               - { label: Image, name: image, widget: image }
               - { label: Title, name: title, widget: string }
-              - { label: Description, name: description, widget: markdown }
+              - { label: Description, name: description, widget: text }
+          - label: Client Icons
+            name: client_icons
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+          - label: About Us
+            name: about
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: text }
+          - label: Accreditations
+            name: accreditations
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+          - label: What We Offer
+            name: our_offers
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: text }
+          - label: Offer Points
+            name: offer_points
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: string }
 
         # - label: 'Services Page'
         #   name: 'services'
@@ -37,7 +62,7 @@ collections:
         #   slug: '/services'
         #   fields:
         #     - { label: Title, name: title, widget: string }
-        #     - { label: Intro, name: intro, widget: markdown }
+        #     - { label: Intro, name: intro, widget: text }
         #     - label: Plumbing Services
         #       name: plumbing_services
         #       widget: list
@@ -97,7 +122,7 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'text' }
       - widget: select
         label: 'tags'
         name: 'tags'
