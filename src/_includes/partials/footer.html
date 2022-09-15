@@ -1,9 +1,22 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
-        {{settings.name}}
-        2020. Made with ❤ by
-        <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
-        •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
-    </small>
+<footer class="w-full bg-gray-800 text-white text-center">
+  <div class="py-6">
+    <nav class="md:flex items-center justify-center">
+      {% for item in navigation.items %}
+      <a
+        href="{{ item.url }}"
+        class="block mb-4 md:mb-0 md:mx-8 hover:underline"
+      >
+        {{ item.text }}
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="py-3 bg-gray-900">
+    <p class="text-xs">
+      © Heritage Heating and Plumbing
+      <script type="text/javascript">
+        document.write(' ' + /\d{4}/.exec(Date())[0]);
+      </script>
+    </p>
+  </div>
 </footer>

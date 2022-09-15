@@ -56,23 +56,23 @@ collections:
             fields:
               - { label: Text, name: text, widget: string }
 
-        # - label: 'Services Page'
-        #   name: 'services'
-        #   file: 'src/_data/services.yml'
-        #   slug: '/services'
-        #   fields:
-        #     - { label: Title, name: title, widget: string }
-        #     - { label: Intro, name: intro, widget: text }
-        #     - label: Plumbing Services
-        #       name: plumbing_services
-        #       widget: list
-        #       fields:
-        #         - { label: Text, name: text, widget: string }
-        #     - label: Heating Services
-        #       name: heating_services
-        #       widget: list
-        #       fields:
-        #         - { label: Text, name: text, widget: string }
+      - label: 'Services Page'
+        name: 'services'
+        file: 'src/_data/services.yaml'
+        slug: '/services'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Plumbing Services
+            name: plumbing_services
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: string }
+          - label: Heating Services
+            name: heating_services
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: string }
 
   - label: 'Settings'
     name: 'settings'

@@ -1,6 +1,8 @@
 items:
   - text: Home
     url: /
+  - text: Services
+    url: /services/
   - text: Gallery
     url: /gallery/
   - text: Reviews
