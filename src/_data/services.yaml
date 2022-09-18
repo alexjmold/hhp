@@ -2,3 +2,20 @@ title: Services
 intro: Our customers are very important to us. We show true dedication to
   meeting their exact needs, and this is what keeps them returning to us for
   Plumbing & Heating work time and time again.
+plumbing_services:
+  - text: General plumbing installations
+  - text: Plumbing repairs
+  - text: Power flush & chemical flush
+  - text: Radiators / valves / thermostats installed / replaced
+  - text: Thermostatic shower installation/repair
+  - text: Electric shower installation
+  - text: Tap repair/replacement
+  - text: Shower pump installs
+  - text: Cold water tank booster pumps
+  - text: Water supply pipe repairs
+heating_services:
+  - text: Central heating - gas boiler repairs / servicing
+  - text: Central heating - oil boiler repairs / servicing
+  - text: Gas boiler installations (natural gas and LPG)
+  - text: Oil boiler installation
+  - text: Oil tank installation and inspection
