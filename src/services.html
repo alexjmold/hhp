@@ -5,8 +5,32 @@ path: /services
 name: services
 ---
 
-<div
-  class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
->
-  {{ services.intro }}
+<!-- Header -->
+<div class="w-full text-gray-800 px-5">
+  <div class="container max-w-7xl mx-auto lg:py-8">
+    <h1
+      class="font-bold text-left text-4xl lg:text-6xl leading-snug xl:leading-normal max-w-lg"
+    >
+      {{services.title}}
+    </h1>
+    <p class="text-lg lg:text-xl font-medium mb-5 max-w-3xl">
+      {{services.intro}}
+    </p>
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Services Listing -->
+{% include "./_includes/partials/service_listing.html" %}
+
+<!-- CTA -->
+<div class="container max-w-2xl px-5 py-10 text-center text-gray-800">
+  <p class="mb-4 font-bold text-3xl">Want to know more?</p>
+  <p class="mb-6">{{ services.call_to_action }}</p>
+  <a
+    href="/contact"
+    class="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg lg:text-lg inline-block hover:bg-blue-700"
+  >
+    Get in touch
+  </a>
 </div>

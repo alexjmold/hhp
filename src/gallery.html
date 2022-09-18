@@ -1,26 +1,36 @@
 ---
 layout: default
-title: Heritage Heating and Plumbing - Gallery
-path: gallery/
+title: Heritage Heating and Plumbing | Gallery
+path: /gallery
+name: gallery
 ---
 
-<div
-  class="container mx-auto lg:h-screen flex flex-col justify-center items-center"
->
-  <h1>
-    Welcome to
-    <strong
-      class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
+<!-- Header -->
+<div class="w-full text-gray-800 px-5">
+  <div class="container max-w-7xl mx-auto lg:py-8">
+    <h1
+      class="font-bold text-left text-4xl lg:text-6xl leading-snug xl:leading-normal max-w-lg"
     >
-      {{title}}
-    </strong>
-  </h1>
+      {{gallery.title}}
+    </h1>
+    <p class="text-lg lg:text-xl font-medium mb-5 max-w-3xl">
+      {{gallery.intro}}
+    </p>
+  </div>
+</div>
+<!-- End Header -->
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+<!-- Gallery -->
+{% include "./_includes/partials/interactive_gallery.html" %}
 
-  {% include "./_includes/partials/content.html" %}
+<!-- CTA -->
+<div class="container max-w-2xl px-5 py-10 text-center text-gray-800">
+  <p class="mb-4 font-bold text-3xl">Want to know more?</p>
+  <p class="mb-6">{{ services.call_to_action }}</p>
+  <a
+    href="/contact"
+    class="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg lg:text-lg inline-block hover:bg-blue-700"
+  >
+    Get in touch
+  </a>
 </div>
