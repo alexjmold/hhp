@@ -9,3 +9,5 @@ items:
     url: /reviews/
   - text: Contact
     url: /contact/
+  - text: T&C's
+    url: /static/img/heritagetandcs.pdf
