@@ -71,3 +71,7 @@ ul.cog-list li::before {
   color: #3b82f6;
   font-family: sans-serif;
 }
+
+.main-title {
+  line-height: 1.25 !important;
+}
