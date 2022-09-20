@@ -1,0 +1,25 @@
+<div id="map" class="bg-white rounded-lg w-full h-80 md:h-96"></div>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+  defer
+></script>
+
+<script type="text/javascript">
+  let map;
+  const markerLocation = { lat: 50.642545351046515, lng: -2.4764206150678207 };
+
+  function initMap() {
+    const map = new google.maps.Map(document.getElementById('map'), {
+      center: markerLocation,
+      zoom: 10,
+    });
+
+    const marker = new google.maps.Marker({
+      position: markerLocation,
+      map: map,
+      icon: '/static/img/map-icon.png',
+    });
+  }
+
+  window.initMap = initMap;
+</script>

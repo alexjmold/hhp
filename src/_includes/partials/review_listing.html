@@ -1,0 +1,16 @@
+{% if reviews.review_items %}
+<div class="w-full bg-blue-300 py-10 px-5 text-gray-800">
+  <div class="container max-w-3xl">
+    {% for item in reviews.review_items %}
+    <div class="bg-white rounded-lg shadow-lg px-5 py-8 mb-8 review-item">
+      <div class="relative pl-8 review-container">
+        <p class="mb-5 text-normal lg:text-lg">{{ item.review }}</p>
+      </div>
+      <p class="font-bold text-sm text-gray-500 border-t pt-5 border-gray-100">
+        {{ item.author }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

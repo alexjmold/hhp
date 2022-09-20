@@ -1,0 +1,77 @@
+<div class="px-5 bg-white rounded-lg px-5 py-8 text-gray-800">
+  <h3 class="text-4xl font-bold mb-5">Contact us</h3>
+  <form name="contact" data-netlify="true" action="POST">
+    <p class="mb-5">
+      <label>
+        Your name
+        <input
+          type="text"
+          class="p-3 border border-gray-300 rounded-md w-full"
+          name="name"
+          maxlength="100"
+        />
+      </label>
+    </p>
+    <p class="mb-5">
+      <label>
+        Your phone number
+        <input
+          type="tel"
+          class="p-3 border border-gray-300 rounded-md w-full"
+          name="phone"
+          maxlength="100"
+        />
+      </label>
+    </p>
+    <p class="mb-5">
+      <label>
+        Your email
+        <input
+          type="email"
+          class="p-3 border border-gray-300 rounded-md w-full"
+          name="email"
+          maxlength="100"
+        />
+      </label>
+    </p>
+    <p class="mb-5">
+      <label>
+        Your message
+        <textarea
+          type="email"
+          class="p-3 border border-gray-300 rounded-md w-full resize-none h-32"
+          name="message"
+          maxlength="300"
+        ></textarea>
+      </label>
+    </p>
+    <p class="mb-5">
+      <div data-netlify-recaptcha="true"></div>
+    </p>
+    <p>
+      <button
+        type="submit"
+        class="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg lg:text-lg inline-block hover:bg-blue-700"
+      >
+        Send
+      </button>
+    </p>
+  </form>
+</div>
+<!-- 
+<script type="text/javascript">
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById('contact-form');
+    let formData = new FormData(myForm);
+    fetch('https://xenodochial-haibt-0a3974.netlify.app', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log('Form successfully submitted'))
+      .catch((error) => alert(error));
+  };
+
+  document.querySelector('form').addEventListener('submit', handleSubmit);
+</script> -->

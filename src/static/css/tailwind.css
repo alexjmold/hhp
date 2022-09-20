@@ -60,3 +60,14 @@ ul.cog-list li::before {
     left: 0;
   }
 }
+
+.review-container::before {
+  content: '“';
+  position: absolute;
+  left: -5px;
+  top: -18px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #3b82f6;
+  font-family: sans-serif;
+}

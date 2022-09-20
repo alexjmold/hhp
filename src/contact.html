@@ -1,0 +1,38 @@
+---
+layout: default
+title: Heritage Heating and Plumbing | Contact
+path: /contact
+name: contact
+---
+
+<!-- Header -->
+<div class="w-full text-gray-800 px-5">
+  <div class="container max-w-7xl mx-auto lg:py-8">
+    <h1
+      class="font-bold text-left text-4xl lg:text-6xl leading-snug xl:leading-normal max-w-lg"
+    >
+      {{contact.title}}
+    </h1>
+    <p class="text-lg lg:text-xl font-medium mb-5 max-w-3xl">
+      {{contact.intro}}
+    </p>
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Map/Form Container -->
+<div class="w-full px-5 py-10 bg-gray-800">
+  <div class="container max-w-7xl">
+    <div class="lg:flex lg:gap-10">
+      <div class="lg:w-1/2">
+        <!-- Contact Form -->
+        {% include "./_includes/partials/contact_form.html" %}
+      </div>
+      <div class="lg:w-1/2">
+        <!-- Map -->
+        {% include "./_includes/partials/map.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Map/Form Container -->
