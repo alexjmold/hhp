@@ -1,0 +1,84 @@
+---
+layout: default
+title: Heritage Heating and Plumbing | Plans
+path: /plans
+name: plans
+---
+
+<!-- Header -->
+<div class="w-full text-gray-800 px-5">
+  <div class="container max-w-7xl mx-auto lg:py-8">
+    <h1
+      class="font-bold text-left text-4xl lg:text-6xl leading-snug xl:leading-normal max-w-lg"
+    >
+      {{plans.title}}
+    </h1>
+    <p class="text-lg lg:text-xl font-medium mb-5 max-w-3xl">{{plans.intro}}</p>
+  </div>
+</div>
+<!-- End Header -->
+
+<!-- Plan Listing -->
+{% include "./_includes/partials/service_plans.html" %}
+<!-- End Plan Listing -->
+
+<!-- Why use a service plan -->
+<div class="w-full text-gray-800 text-center">
+  <div class="inline-block mx-auto p-5 mt-10">
+    <div class="blue-underline mb-5">
+      <h3 class="text 3xl font-bold">
+        Why sign up to one of our Service Plans?
+      </h3>
+    </div>
+    <ul class="tick-list text-left">
+      {% for point in plans.info_points %}
+      <li>{{ point.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<!-- end -->
+
+<!-- Customer Quotes -->
+<div class="w-full bg-blue-500 py-10 my-10">
+  <div class="container text-center mb-8">
+    <p class="text-white text-2xl font-bold">What our customers have to say</p>
+  </div>
+  <div class="md:flex">
+    {% for quote in plans.customer_quotes %}
+    <div class="w-full md:w-1/3 px-3 mb-3">
+      <div class="bg-white border-b-8 border-blue-700 p-5 rounded-xl shadow-lg">
+        <p class="italic tracking-loose leading-loose">"{{ quote.text }}"</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- end quotes -->
+
+<!-- CTA -->
+<div class="container max-w-2xl px-5 py-10 text-center text-gray-800">
+  <p class="mb-4 font-bold text-3xl">Not sure which plan is best for you?</p>
+  <p class="mb-6">{{ plans.call_to_action }}</p>
+  <a
+    href="/contact"
+    class="bg-blue-500 text-white font-bold px-6 py-3 rounded-lg lg:text-lg inline-block hover:bg-blue-700"
+  >
+    Get in touch
+  </a>
+</div>
+
+<!-- FAQs -->
+<div class="w-full bg-gray-100 py-10">
+  <div class="container mx-auto text-center">
+    <div class="blue-underline mb-8">
+      <h3 class="text 3xl font-bold">Frequently Asked Questions</h3>
+    </div>
+  </div>
+  <div class="w-full max-w-3xl mx-auto">
+    {% for question in plans.faqs %}
+    <p class="text-lg font-bold mb-2 leading-loose">{{ question.question }}</p>
+    <p class="mb-5 leading-loose">{{ question.answer }}</p>
+    {% endfor %}
+  </div>
+</div>

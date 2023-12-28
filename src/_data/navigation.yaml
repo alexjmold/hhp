@@ -3,6 +3,8 @@ items:
     url: /
   - text: Services
     url: /services/
+  - text: Plans
+    url: /plans/
   - text: Gallery
     url: /gallery/
   - text: Reviews

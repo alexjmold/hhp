@@ -88,6 +88,50 @@ collections:
             fields:
               - { label: Image, name: image, widget: image }
 
+      - label: 'Plans Page'
+        name: 'plans'
+        file: 'src/_data/plans.yaml'
+        slug: '/plans'
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: string }
+          - Label: Info Points
+            name: info_points
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: string }
+          - Label: Customer Quotes
+            name: customer_quotes
+            widget: list
+            fields:
+              - { label: Text, name: text, widget: string }
+          - { label: Call To Action, name: call_to_action, widget: string }
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: string }
+          - Label: Plans
+            name: plans
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: Price, name: Price, widget: string }
+              - {
+                  label: Services,
+                  name: services,
+                  widget: list,
+                  field: { label: Text, name: text, widget: string },
+                }
+              - {
+                  label: Extras,
+                  name: extras,
+                  widget: list,
+                  field: { label: Text, name: text, widget: string },
+                }
+
       - label: 'Reviews Page'
         name: 'reviews'
         file: 'src/_data/reviews.yaml'

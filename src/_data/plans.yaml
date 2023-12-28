@@ -1,0 +1,75 @@
+title: Service Plans
+intro: Choose a plan that's right for you. Rest assured if anything goes wrong
+  with your boiler, our Service Plans will keep you covered when you need help
+  the most.
+info_points:
+  - text: Reassurance in the fact you know your boiler is being looked after
+  - text: Peace of mind knowing a qualified engineer is one call away
+  - text: Avoid any unexpected costly repairs
+  - text: Spread the cost into affordable monthly instalments
+customer_quotes:
+  - text: A brilliant and honest service. This was the first time our 12 year old
+      boiler had been serviced properly. Our previous contractor had been
+      ripping us off year after year without us twigging.
+  - text: James worked to a very high standard James is very professional has
+      excellent knowledge in terms of his trade he is punctual helpful and very
+      pleasant we will definitely use James in the future.
+  - text: We can't recommend James enough to people. Finally an honest and reliable
+      engineer! The work was to the highest standard and we couldn't be happier.
+call_to_action: We understand that you might not know which plan would best suit
+  you and your property. If this is the case, please get in touch by clicking
+  the button below and we'll be more than happy to help.
+faqs:
+  - question: What does an annual boiler service include?
+    answer: During a boiler service, we will carry out a series of checks to ensure
+      that your boiler and central heating are running safely and efficiently.
+      We will check for water leaks, as well as any damage and wear and tear.
+      We'll also carry out several safety inspections to make sure that your
+      boiler is using the right amount of gas and not letting off carbon
+      monoxide or other harmful gasses.
+  - question: How do I book my annual boiler service?
+    answer: We will get in touch before your annual service is due so that you can
+      book a time slot for our engineer to carry out the service. If at any
+      point you'd like to book in a service, please just get in touch.
+  - question: What is a Cover Plan and why do I need one?
+    answer: A Cover Plan provides you with assistance should your boiler break down
+      and affect your home's heating and hot water supply. It also helps you to
+      spread the cost of your annual boiler service. You can have full peace of
+      mind knowing we're just a call away when you need us.
+plans:
+  - name: Basic Boiler Protection
+    services:
+      - Annual Boiler Service Included
+      - Annual Carbon Monoxide Test
+    extras:
+      - Unvented Cylinder Service (+ Monthly £5.99 bolt-on)
+    link: https://pay.gocardless.com/AL000VPY36PBKK
+    Price: £9.99
+  - name: Essential Boiler Protection
+    link: https://pay.gocardless.com/AL000VPY3RF0S0
+    services:
+      - Annual Boiler Service Included
+      - Annual System Water Test
+      - Magnetic filter if fitted clean and check
+      - Annual Carbon Monoxide Test
+      - Priority Call Outs
+      - Loyalty Discount of 10% on our other services
+      - Parts and Labour Covered
+    extras:
+      - Unvented Cylinder Service (+Monthly £5.99 bolt-on)
+    Price: £14.99
+  - name: Premium Boiler Protection
+    link: https://pay.gocardless.com/AL000VPY4A7D1G
+    services:
+      - Annual Boiler Service Included
+      - Annual System Water Test
+      - Annual Carbon Monoxide Test
+      - Priority Call Outs
+      - Boiler and Central Heating System Covered
+      - Three 24 Hour Emergency Call Outs per calendar year
+      - Breakdown Labour Discount of 5%
+      - Out of hours boiler services up to 20H00
+      - Loyalty Discount of 10% on our other services
+    extras:
+      - Unvented Cylinder Service (+ Monthly £5.99 bolt-on)
+    Price: £24.99
