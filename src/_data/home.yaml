@@ -1,11 +1,3 @@
-offer_points:
-  - text: Radiator replacements, TRV and lock shield replacements
-  - text: Leaking pipes, tap replacements
-  - text: Electrical power shower installs
-  - text: Bar shower replacement and new shower installations
-  - text: From a light fitting to a consumer unit replacement
-  - text: Shower pump installs on gravity fed systems
-  - text: System pump installs
 title: Heritage Heating & Plumbing
 tagline: We offer a complete plumbing and heating service in and around Dorset.
 intro: If you’re looking for any Plumbing & Heating work in and around Dorset
@@ -21,21 +13,18 @@ info_points:
       small touches mean a far superior finish that can stand the test of time.
   - image: /static/img/brief_case.svg
     title: Professional
-    description:
-      We strive to be a company that you can rely on. Thats why we arrive
+    description: We strive to be a company that you can rely on. Thats why we arrive
       at the agreed time all the time and well equipped for the job at hand.
       Doing so means we can always stick to time lines and the initial
       quotations we give.
   - image: /static/img/sparkles.svg
     title: Experienced
-    description:
-      We are time served and have many years experience working within
+    description: We are time served and have many years experience working within
       the trade. Throughout our many years operating in Dorset we have built up
       a wealth of experience along with a solid base of satisfied customers.
   - image: /static/img/thumbs_up.svg
     title: Trustworthy
-    description:
-      A large percentage of our customers recommend us to their friends
+    description: A large percentage of our customers recommend us to their friends
       and family due to our excellent levels of customer service and quality of
       our workmanship. Many even return to us for other Plumbing & Heating work
       in the future.
@@ -46,18 +35,19 @@ client_icons:
   - image: /static/img/logo-5-1.png
   - image: /static/img/g1-1.png
 about:
-  - text:
-      Established in Dorset, and with many years experience in the Plumbing &
+  - text: Established in Dorset, and with many years experience in the Plumbing &
       Heating trade, Heritage Heating & Plumbing are a professional, reliable
       and fully accredited company operating in Dorset and the wider area.
-  - text:
-      We take great pride in all work which we undertake, taking great care to
+  - text: We take great pride in all work which we undertake, taking great care to
       make sure that our client’s needs are met in a meticulous and professional
       manner. All of our staff are fully qualified to complete the task at hand,
       and we operate to all modern governed standards. We have an exemplary
       track record when it comes to meeting our clients’ needs, and we are
       confident that we can exceed your expectations when it comes to your next
       Plumbing & Heating project!
+accreditations:
+  - image: /static/img/gassafe-1.png
+  - image: /static/img/oftec-1.png
 our_offers:
   - text: Here at Heritage Heating & Plumbing we have built up an excellent
       reputation in our local area by offering the most comprehensive and expert
@@ -67,7 +57,11 @@ our_offers:
       satisfied with the end result. You can also rest assured that you will be
       receiving a professional, yet personal service for each job that we
       attend.
-accreditations:
-  - image: /static/img/checkatrade-1.png
-  - image: /static/img/gassafe-1.png
-  - image: /static/img/oftec-1.png
+offer_points:
+  - text: Radiator replacements, TRV and lock shield replacements
+  - text: Leaking pipes, tap replacements
+  - text: Electrical power shower installs
+  - text: Bar shower replacement and new shower installations
+  - text: From a light fitting to a consumer unit replacement
+  - text: Shower pump installs on gravity fed systems
+  - text: System pump installs

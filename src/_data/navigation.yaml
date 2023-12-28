@@ -3,6 +3,8 @@ items:
     url: /
   - text: Services
     url: /services/
+  - text: Boiler Plans
+    url: /plans/
   - text: Gallery
     url: /gallery/
   - text: Reviews
