@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
+    "netlify-identity-widget": "^1.9.2",
     "postcss": "^8.4.5"
   }
 }
